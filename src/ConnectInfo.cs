@@ -16,9 +16,9 @@ namespace ConnectInfo
         [JsonPropertyName("GeoLiteEnglish")] public bool GeoLiteEnglish { get; set; } = false;
         [JsonPropertyName("CityIncluded")] public bool CityIncluded { get; set; } = true;
         [JsonPropertyName("LogPrefix")] public string LogPrefix { get; set; } = "[Connect Info] ";
-        [JsonPropertyName("ConnectMessageWithGeo")] public string ConnectMessageWithGeo { get; set; } = "{PURPLE}[INFO] {DEFAULT}Игрок {GRAY}{PLAYERNAME} {DEFAULT} подключается из {GREEN}{GEOINFO} {LIME}[+]";
-        [JsonPropertyName("ConnectMessageWithoutGeo")] public string ConnectMessageWithoutGeo { get; set; } = "{PURPLE}[INFO] {DEFAULT}Игрок {GRAY}{PLAYERNAME} {DEFAULT} подключается {LIME}[+]";
-        [JsonPropertyName("DisconnectMessage")] public string DisconnectMessage { get; set; } = "{PURPLE}[INFO] {DEFAULT}Игрок {GRAY}{PLAYERNAME} {DEFAULT} вышел с сервера {LIGHTRED}[-]";
+        [JsonPropertyName("ConnectMessageWithGeo")] public string ConnectMessageWithGeo { get; set; } = "{LIME}[+]{DEFAULT} Игрок {GRAY}{PLAYERNAME} {DEFAULT} подключается из {GREEN}{GEOINFO}";
+        [JsonPropertyName("ConnectMessageWithoutGeo")] public string ConnectMessageWithoutGeo { get; set; } = "{LIME}[+]{DEFAULT} Игрок {GRAY}{PLAYERNAME} {DEFAULT} подключается";
+        [JsonPropertyName("DisconnectMessage")] public string DisconnectMessage { get; set; } = "{LIGHTRED}[-]{DEFAULT} Игрок {GRAY}{PLAYERNAME} {DEFAULT} вышел с сервера";
         [JsonPropertyName("ConsoleConnectMessageWithGeo")] public string ConsoleConnectMessageWithGeo { get; set; } = "Игрок {PLAYERNAME} подключается из {GEOINFO}";
         [JsonPropertyName("ConsoleConnectMessageWithoutGeo")] public string ConsoleConnectMessageWithoutGeo { get; set; } = "Игрок {PLAYERNAME} подключается";
     }
